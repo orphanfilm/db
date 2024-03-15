@@ -18,5 +18,4 @@ credits: false
 
 This site is generated using [CollectionBuilder](https://collectionbuilder.github.io/) following the [Lib-Static](https://lib-static.github.io/) methodology. 
 
-{:.text-center}
 
