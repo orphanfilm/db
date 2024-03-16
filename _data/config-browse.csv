@@ -1,10 +1,10 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
-creator,Creator,,,
-contributor1,Contributor,,,
-contributor2,Contributor,,,
-contributor3,Contributor,,,
-publisher,Publisher,,,
+creator,Creator,true,,,
+contributor1,Contributor,true,,,
+contributor2,Contributor,true,,,
+contributor3,Contributor,true,,,
+publisher,Publisher,true,,,
 subject,,true
 subject2,,true
 location,,true
