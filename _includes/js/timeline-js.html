@@ -18,9 +18,8 @@ function makeCard(obj) {
             thumbSrc = obj.filename; 
         }
          else { 
-            thumbSrc = "{{ '/objects/' | relative_url }}" + obj.filename; 
+            thumbSrc = "{{ relative_url }}" + obj.filename; 
         }
- 
     } else if (obj.format.includes("audio")) {
         thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-audio }}.svg';
     } else if (obj.format.includes("video")) {
