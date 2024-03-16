@@ -23,7 +23,7 @@ location,Location
 latitude,Latitude
 longitude,Longitude
 source,Source,true
-type,Type,
-format,Format,,,
+type,Type,,
+format,Format,,
 rights,,,
 rightsstatement,Rights Statement,,true
