@@ -7,5 +7,6 @@ contributor3,Contributor,true,,,
 publisher,Publisher,true,,,
 subject,,true
 subject2,,true
+edition,Edition,true
 location,Location,true
 source,Source,,,
