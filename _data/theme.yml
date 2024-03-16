@@ -8,7 +8,7 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use a relative location of an image in this repo (ex. /assets/img/feature.jpg), or a full url to an image elsewhere
-featured-image: https://s18798.pcdn.co/orphanfilm/wp-content/uploads/sites/75/2024/02/orphans2024_work-play-diptych.jpeg
+featured-image:
 # optional: add extra padding around collection title for a larger image feature. 
 home-title-y-padding: 5em # Default is 8em
 # optional: change position of background image, center, top, bottom
