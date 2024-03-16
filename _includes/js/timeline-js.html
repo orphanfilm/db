@@ -5,30 +5,34 @@
 <script>
 
 function makeCard(obj) {
-    // find images and link
     // find item link
-    var itemHref = obj.parentid ?  "{{ '/item.html' | relative_url | append: '?id=' }}" + obj.parentid + "#" + obj.objectid : "{{ '/item.html' | relative_url | append: '?id=' }}" + obj.objectid;
+    var itemHref = obj.parentid ? "{{ '/item.html' | relative_url | append: '?id=' }}" + obj.parentid + "#" + obj.objectid : "{{ '/item.html' | relative_url | append: '?id=' }}" + obj.objectid;
+
     // find images
     var thumbSrc;
     // add images or thumb for objects based on format
-    if(obj.youtubeid) {
+    if (obj.youtubeid) {
         thumbSrc = 'https://img.youtube.com/vi/' + obj.youtubeid + '/hqdefault.jpg';
     } else if (obj.format.includes("image")) {
-        if(obj.filename.includes("/")) { 
-            thumbSrc = obj.filename; 
+        if (obj.filename.includes("/")) {
+            thumbSrc = obj.filename;
+        } else {
+            thumbSrc = "{{ '/objects/' | relative_url }}" + obj.filename;
         }
-         else { 
-            thumbSrc = "{{ relative_url }}" + obj.filename; 
-    }  
+    } else {
+        thumbSrc = ''; // No specific thumb source for other formats
+    }
+
     // create card based on type
-    if (obj.youtubeid || obj.format.includes("image")){
-        var card = `<div class="col-lg-4 col-md-6">
+    var card;
+    if (obj.youtubeid || obj.format.includes("image")) {
+        card = `<div class="col-lg-4 col-md-6">
             <a href="${itemHref}">
                 <img class="lazyload img-thumbnail timeline-thumb" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E" data-src="${thumbSrc}" alt="${obj.title}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="${obj.title} | ${obj.date}">
             </a>
             </div>`;
     } else {
-        var card = `<div class="col-lg-4 col-md-6">
+        card = `<div class="col-lg-4 col-md-6">
             <a href="${itemHref}">
                 <div class="card"> 
                     <div class="card-body text-center">
