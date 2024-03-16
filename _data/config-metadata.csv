@@ -16,6 +16,7 @@ publisher,Publisher,true
 publisherrole,Publisher Role
 description,Description,
 descriptiontype,Description Type
+edition,Edition,true
 subject,Subject,true,
 subject2,Subject,true,
 location,Location
