@@ -24,6 +24,7 @@ longitude,Longitude
 source,Source
 identifier,Source Identifier,,
 type,Type,
+identifier,Identifier
 format,Format,
 rights,Rights,
 rightsstatement,Rights Statement,,true
