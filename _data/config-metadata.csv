@@ -22,9 +22,8 @@ location,Location
 latitude,Latitude
 longitude,Longitude
 source,Source,true
-identifier,Source Identifier,,
 type,Type,
 identifier,Identifier
-format,Format,
+format,,
 rights,Rights,
 rightsstatement,Rights Statement,,true
