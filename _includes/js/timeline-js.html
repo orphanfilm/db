@@ -16,8 +16,6 @@ function makeCard(obj) {
     } else if (obj.format.includes("image")) {
         if(obj.filename.includes("/")) { 
             thumbSrc = obj.filename; 
-        } else { 
-            thumbSrc = "{{ '/objects/' | relative_url }}" + obj.filename; 
         }
     // create card based on type
     if (obj.youtubeid || obj.format.includes("image")){
