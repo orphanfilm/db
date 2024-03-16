@@ -4,15 +4,15 @@ title1type,Title Type
 title2,Title
 title2type,Title Type
 date,Date Created,
-creator,Creator,
+creator,Creator,true
 creatorrole,Creator Role,
-contributor1,Contributor
+contributor1,Contributor,true
 contributorrole1,Contributor Role
-contributor2,Contributor
+contributor2,Contributor,true
 contributorrole2,Contributor Role
-contributor3,Contributor 
+contributor3,Contributor,true 
 contributorrole3,Contributor Role
-publisher,Publisher
+publisher,Publisher,true
 publisherrole,Publisher Role
 description,Description,
 descriptiontype,Description Type
@@ -21,7 +21,7 @@ subject2,Subjects,true
 location,Location
 latitude,Latitude
 longitude,Longitude
-source,Source
+source,Source,true
 identifier,Source Identifier,,
 type,Type,
 identifier,Identifier
