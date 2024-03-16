@@ -1,7 +1,13 @@
 field,index,display
 title,true,true
 date,true,true
-creator,true,false
+creator,true,true
+contributor1,true,true
+contributor2,true,true
+contributor3,true,true
+publisher,true,true
 description,true,true
 subject,true,true
-location,true,false
+subject2,true,true
+source,true,true
+location,true,true
