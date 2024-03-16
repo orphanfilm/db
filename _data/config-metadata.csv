@@ -16,14 +16,14 @@ publisher,Publisher,true
 publisherrole,Publisher Role
 description,Description,
 descriptiontype,Description Type
-subject,Subjects,true
-subject2,Subjects,true
+subject,Subject,true,
+subject2,Subject,true,
 location,Location
 latitude,Latitude
 longitude,Longitude
 source,Source,true
 type,Type,
-identifier,Identifier
-format,,
-rights,Rights,
+identifier,,,
+format,,,
+rights,,,
 rightsstatement,Rights Statement,,true
