@@ -19,21 +19,6 @@ function makeCard(obj) {
         } else { 
             thumbSrc = "{{ '/objects/' | relative_url }}" + obj.filename; 
         }
-    } else if (obj.format.includes("audio")) {
-        thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-audio }}.svg';
-    } else if (obj.format.includes("video")) {
-        thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-video }}.svg';  
-    } else if (obj.format.includes("pdf")) {
-        thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-pdf }}.svg';
-    } else if (obj.format.includes("record")) {
-        thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-record }}.svg';
-    } else if (obj.format.includes("compound")) {
-        thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-compound-object }}.svg';
-    } else if (obj.format.includes("multiple")) {
-        thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-multiple }}.svg';
-    } else {
-        thumbSrc = '{{ "/assets/lib/icons/" | relative_url }}{{ icons.icon-default }}.svg';
-    }  
     // create card based on type
     if (obj.youtubeid || obj.format.includes("image")){
         var card = `<div class="col-lg-4 col-md-6">
