@@ -23,7 +23,7 @@ agent7,Cast,true
 agent_activity7,Role,
 agent8,Cast,true
 agent_activity8,Role,
-holding_institution,Holding Institution
+holding_institution,Holding Institution,true
 description, Description,
 descriptiontype,Description Type
 notes,Notes
