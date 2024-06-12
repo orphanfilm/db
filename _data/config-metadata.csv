@@ -1,29 +1,41 @@
 field,display_name,browse_link,external_link
-title,Title,
+title,Title,,
 title1type,Title Type
-title2,Title
-title2type,Title Type
 date,Date Created,
-creator,Creator,true
-creatorrole,Creator Role,
-contributor1,Contributor,true
-contributorrole1,Contributor Role
-contributor2,Contributor,true
-contributorrole2,Contributor Role
-contributor3,Contributor,true 
-contributorrole3,Contributor Role
-publisher,Publisher,true
-publisherrole,Publisher Role
-description,Description,
+duration,Duration,,
+format,Format,,
+type,Type,
+agent,Cast,true
+agent_activity,Role,
+agent1,Cast,true
+agent_activity1,Role,
+agent2,Cast,true
+agent_activity2,Role,
+agent3,Cast,true
+agent_activity3,Role,
+agent4,Cast,true
+agent_activity4,Role,
+agent5,Cast,true
+agent_activity5,Role,
+agent6,Cast,true
+agent_activity6,Role,
+agent7,Cast,true
+agent_activity7,Role,
+agent8,Cast,true
+agent_activity8,Role,
+holding_institution,Holding Institution
+description, Description,
 descriptiontype,Description Type
-edition,Edition,true
-subject,Subject,true,
-subject2,Subject,true,
+notes,Notes
+event1,Edition,
+event2,Session,
+event3,Project Title,
+publisher,Publisher,true
+agent_manifestation,Presenter,
+agent_manifestationrole,Role,
+agent_manifestation1,Affiliation,
 location,Location
 latitude,Latitude
 longitude,Longitude
-source,Source,true
-type,Type,,
-format,Format,,
 rights,,,
 rightsstatement,Rights Statement,,true
