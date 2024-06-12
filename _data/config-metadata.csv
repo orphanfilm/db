@@ -8,7 +8,7 @@ type,Type,
 agent,Cast,true
 agent_activity,Role,
 agent1,Cast,true
-agent_activity1,,
+agent_activity1,Role,
 agent2,Cast,true
 agent_activity2,Role,
 agent3,Cast,true
