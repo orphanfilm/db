@@ -10,7 +10,7 @@
 # use a relative location of an image in this repo (ex. /assets/img/feature.jpg), or a full url to an image elsewhere
 featured-image: https://s18798.pcdn.co/orphanfilm/wp-content/uploads/sites/75/2024/05/24swp_OFS2024_22danafilmsymposium-copy-1536x1019.jpeg
 # optional: add extra padding around collection title for a larger image feature. 
-home-title-y-padding: 5em # Default is 8em
+home-title-y-padding: 4em # Default is 8em
 # optional: change position of background image, center, top, bottom
 home-banner-image-position: # Default is center
 
