@@ -33,5 +33,5 @@ presenter_affiliation,Affiliation,true,
 location,Location,,
 latitude,Latitude,,
 longitude,Longitude,,
-rights,,,,
+rights,,,
 rightsstatement,Rights Statement,,true
