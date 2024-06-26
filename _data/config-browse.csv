@@ -1,6 +1,6 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
-director,Director,true,,,
+director,Director,true,,
 producer,Producer,true,,,
 production_company,Production Company,true,,,
 writer,Writer,true,,,
