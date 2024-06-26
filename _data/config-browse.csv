@@ -3,9 +3,9 @@ date,Date,,,Date
 director,Director,true,,
 producer,Producer,true,,
 production_company,Production Company,true,,
-writer,Writer,true,,,
-cast,Cast,true,,,
-subject,,true
-presenter,Presenter,true
-location,Location,true
+writer,Writer,true,,
+cast,Cast,true,,
+subject,,true,,
+presenter,Presenter,true,,
+location,Location,true,,
 holding_institution,,,,
