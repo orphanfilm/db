@@ -96,7 +96,7 @@ bootswatch: darkly
 base-font-size: 1.2em
 text-color: "#eeeeee"
 link-color: "#cfe2f3"
-base-font-family: Roboto, Helvetica, Arial, sans-serif;
+base-font-family:
 font-cdn: 
 # THEME ICONS [optional!]
 # cb-gh uses Bootstrap Icons, https://icons.getbootstrap.com/
