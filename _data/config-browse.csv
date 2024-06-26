@@ -1,12 +1,11 @@
 field,display_name,btn,hidden,sort_name
 date,Date,,,Date
-creator,Creator,true,,,
-contributor1,Contributor,true,,,
-contributor2,Contributor,true,,,
-contributor3,Contributor,true,,,
-publisher,Publisher,true,,,
+director,Director,true,,,
+producer,Producer,true,,,
+production_company,Production Company,true,,,
+writer,Writer,true,,,
+cast,Cast,true,,,
 subject,,true
-subject2,,true
-edition,Edition,true
+presenter,Presenter,true
 location,Location,true
-source,Source,,,
+holding_institution,,,,
