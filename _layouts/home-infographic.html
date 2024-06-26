@@ -1,22 +1,19 @@
-div class="col-md-8">
+  <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+  <div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
 
-{% include index/description.html %}
-{% include index/carousel.html title="Sample Items" %}
+  <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+  <div class="row">
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+    <div class="col-6 col-md-4">.col-6 .col-md-4</div>
+  </div>
 
-</div>
-<div class="col-md-4">
-
-{% include index/time.html %}
-
-{% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="info" %}
-
-{% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
-
-{% include index/objects.html %}
-
-</div>
-<div class="col-md-12">
-
-{% include index/data-download.html %}
-
+  <!-- Columns are always 50% wide, on mobile and desktop -->
+  <div class="row">
+    <div class="col-6">.col-6</div>
+    <div class="col-6">.col-6</div>
+  </div>
 </div>
