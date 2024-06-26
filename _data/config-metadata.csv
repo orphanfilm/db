@@ -1,8 +1,6 @@
 field,display_name,browse_link,external_link
 title,Title,,
 title1type,Title Type
-title2,Title,,
-title2type,Title Type
 date,Date Created,
 duration,Duration,,
 format,Format,,
@@ -27,6 +25,12 @@ agent8,Agent,true
 agent_activity8,Role,
 agent9,Agent,true
 agent_activity9,Role,
+agent10,Agent,true
+agent_activity10,Role,
+agent11,Agent,true
+agent_activity11,Role,
+agent12,Agent,true
+agent_activity12,Role,
 holding_institution,Holding Institution,true
 description, Description,
 descriptiontype,Description Type
