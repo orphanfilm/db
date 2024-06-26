@@ -2,24 +2,24 @@
 # Default home page with boxes providing collection stats
 layout: page
 ---
-<div class="row">
-  <div class="col-md-8">
-
-    {% include index/description.html %}
-
+<div class="row justify-content-start">
+  <div class="col-lg-8">
     {% include index/carousel.html title="Sample Items" height=450 %}
-  
-  </div>
-  <div class="col-md-4">
-
-    {% include index/time.html %}
-
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" max=8 %}
-
-    {% include index/featured-terms.html field="creator" title="Creators" btn-color="success" max=8 %}
-
-    {% include index/objects.html %}
-
   </div>
   
+  <div class="row justify-content-around">
+    <div class="col-md-4">
+      {% include index/description.html %}
+      {% include index/time.html %}
+      {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" max=8 %}
+      {% include index/objects.html %}
+    </div>
+  </div>
+  
+  <div class="row justify-content-between">
+    <div class="col-md-4">
+      {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" max=8 %}
+      {% include index/objects.html %}
+    </div>
+  </div>
 </div>
