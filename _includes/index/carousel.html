@@ -27,13 +27,13 @@
 <style>
     #{{ functionName }} .carousel-item { height: {{ include.height | remove: 'px' | strip | default: '300' }}px; }
 </style>
-<div class="card mb-3">
+<div class="card mb-3" style="background-color: rgba(255, 255, 255, 0.5); /* Example transparent white background */">
     {% if include.header %}<h5 class="card-header">{{ include.header }}</h5>{% endif %}
     <div class="card-body">
         {% if include.title %}<h5 class="card-title">{{ include.title }}</h5>{% endif %}
         
         <div id="{{ functionName }}" class="carousel slide bg-transparent rounded mb-3" data-bs-ride="carousel">
-            <div id="{{ functionName }}carouselIndicators" class="carousel-indicators" class="carousel-indicators">
+            <div id="{{ functionName }}carouselIndicators" class="carousel-indicators">
                 
             </div>
             <div id="{{ functionName }}carouselInner" class="carousel-inner">
@@ -51,6 +51,7 @@
             
     </div>
 </div>
+
 {%- comment -%}
     add slides using JS to allow for randomizing slide show
 {%- endcomment -%}
