@@ -2,56 +2,24 @@
 # Default home page with boxes providing collection stats
 layout: page
 ---
+<div class="row">
+  <div class="col-md-8">
 
-<div class="container">
-  <!-- Row 1: Start-aligned -->
-  <div class="row justify-content-start mb-4">
-    <div class="col-md-8">
-      {% include index/carousel.html title="Sample Items" height=450 %}
-    </div>
-    <div class="col-md-4">
-      {% include index/description.html %}
-    </div>
-  </div>
+    {% include index/description.html %}
 
-  <!-- Row 2: Center-aligned -->
-  <div class="row justify-content-center mb-4">
-    <div class="col-md-4">
-      {% include index/description.html %}
-      {% include index/time.html %}
-    </div>
-    <div class="col-md-4">
-      {% include index/time.html %}
-    </div>
+    {% include index/carousel.html title="Sample Items" height=450 %}
+  
   </div>
+  <div class="col-md-4">
 
-  <!-- Row 3: End-aligned -->
-  <div class="row justify-content-end mb-4">
-    <div class="col-md-4">
-      {% include index/objects.html %}
-    </div>
-    <div class="col-md-4">
-      {% include index/time.html %}
-    </div>
-  </div>
+    {% include index/time.html %}
 
-  <!-- Row 4: Around-aligned -->
-  <div class="row justify-content-around mb-4">
-    <div class="col-md-4">
-      {% include index/objects.html %}
-    </div>
-    <div class="col-md-4">
-      {% include index/description.html %}
-    </div>
-  </div>
+    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" max=8 %}
 
-  <!-- Row 5: Between-aligned -->
-  <div class="row justify-content-between">
-    <div class="col-md-4">
-      {% include index/description.html %}
-    </div>
-    <div class="col-md-4">
-      {% include index/description.html %}
-    </div>
+    {% include index/featured-terms.html field="creator" title="Creators" btn-color="success" max=8 %}
+
+    {% include index/objects.html %}
+
   </div>
+  
 </div>
