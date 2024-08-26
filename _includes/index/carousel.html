@@ -58,11 +58,11 @@
 <script>
     // set up feature function variable 
     var {{ functionName }} = function(cb_items) { 
-        // filter to items with format image, youtubeid or vimeoid
+        // filter to items with format image or youtubeid
         {% if site.data.theme.carousel-child-objects == true %}
-        var carouselItems = cb_items.filter(item => (item.youtubeid || item.vimeoid || item.format.includes("image")) && item.title);
+        var carouselItems = cb_items.filter(item => (item.youtubeid || item.format.includes("image")) && item.title);
         {% else %}
-        var carouselItems = cb_items.filter(item => (item.youtubeid || item.vimeoid || item.format.includes("image")) && !item.parentid);
+        var carouselItems = cb_items.filter(item => (item.youtubeid || item.format.includes("image")) && !item.parentid);
         {% endif %}
         
         /* shuffle items */
@@ -81,29 +81,13 @@
         // add items to carousel 
         for (i=0; i < carousel_size; i++) {
             // calculate item image location
-            let itemImg;
             if(carouselItems[i]["youtubeid"]) {
                 itemImg = "https://img.youtube.com/vi/" + carouselItems[i]["youtubeid"] + "/hqdefault.jpg";
-            } else if (carouselItems[i]["vimeoid"]) {
-                // For Vimeo, use the Vimeo API to get the thumbnail
-                fetch(`https://vimeo.com/api/v2/video/${carouselItems[i]["vimeoid"]}.json`)
-                .then(response => response.json())
-                .then(data => {
-                    itemImg = data[0].thumbnail_large; // Choose appropriate thumbnail size
-                    updateCarouselSlide(i, itemImg);
-                })
-                .catch(error => {
-                    console.error('Error fetching Vimeo thumbnail:', error);
-                    itemImg = "{{ '/default-thumbnail.jpg' | relative_url }}"; // Fallback image
-                    updateCarouselSlide(i, itemImg);
-                });
-                return; // Exit the loop as fetch is async
             } else if (carouselItems[i]["filename"].includes("/")) {
                 itemImg = carouselItems[i]["filename"];
             } else {
                 itemImg = "{{ '/objects/' | relative_url }}" + carouselItems[i]["filename"];
             }
-            
             // calculate item link
             itemLink = carouselItems[i]["parentid"] ? "{{ '/item.html' | relative_url | append: '?id=' }}" + carouselItems[i]["parentid"] + "#" + carouselItems[i]["objectid"] : "{{ '/item.html' | relative_url | append: '?id=' }}" + carouselItems[i]["objectid"];
             // create indicator 
@@ -118,18 +102,6 @@
             slides += slide;
             indicators += indicator;
         }
-
-        // Function to update the carousel slide after fetching Vimeo thumbnail
-        function updateCarouselSlide(index, thumbnail) {
-            slides = slides.split('</div></div>'); // Split slides to update
-            slides[index] = slides[index] + `<img class="d-block h-100 mx-auto lazyload" alt="image highlight" data-src="${thumbnail}"></div></div>`;
-            slides = slides.join('</div></div>'); // Rejoin updated slides
-            var carouselIndicators = document.getElementById("{{ functionName }}carouselIndicators");
-            carouselIndicators.innerHTML = indicators;
-            var carousel = document.getElementById("{{ functionName }}carouselInner");
-            carousel.innerHTML = slides;
-        }
-
         // add indicators to page 
         var carouselIndicators = document.getElementById("{{ functionName }}carouselIndicators");
         carouselIndicators.innerHTML = indicators;
