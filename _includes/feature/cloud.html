@@ -18,7 +18,7 @@
 {% capture functionName %}cloud_feature_{{ include.fields | slugify | replace: "-","_" }}{% endcapture %}
 {%- assign cloud-fields = include.fields | split: ";" -%}
 <!-- div for cloud feature -->
-<div id="{{ functionName }}_div" class="text-center my-4 border rounded p-2"></div>
+<div id="{{ functionName }}_div" class="text-center my-4 border rounded p-2" style="border-color: transparent;"></div>
 <script>
     {% if include.shuffle == true %}
     /* Fisher-Yates shuffle https://bost.ocks.org/mike/shuffle/ */
