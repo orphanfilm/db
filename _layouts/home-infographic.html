@@ -4,8 +4,8 @@ layout: page
 ---
 
 <div class="container">
-  <!-- Row 1: Carousel and Description -->
-  <div class="row mb-4">
+  <!-- Row 1: Start-aligned -->
+  <div class="row justify-content-start mb-4">
     <div class="col-md-8">
       {% include index/carousel.html title="Sample Items" height=450 %}
     </div>
@@ -14,39 +14,43 @@ layout: page
     </div>
   </div>
 
-  <!-- Row 2: Descriptions and Time -->
-  <div class="row mb-4">
+  <!-- Row 2: Center-aligned -->
+  <div class="row justify-content-center mb-4">
     <div class="col-md-4">
       {% include index/description.html %}
-    </div>
-    <div class="col-md-4">
       {% include index/time.html %}
     </div>
     <div class="col-md-4">
-      {% include index/description.html %}
       {% include index/time.html %}
     </div>
   </div>
 
-  <!-- Row 3: Objects and Time -->
-  <div class="row mb-4">
+  <!-- Row 3: End-aligned -->
+  <div class="row justify-content-end mb-4">
     <div class="col-md-4">
       {% include index/objects.html %}
     </div>
     <div class="col-md-4">
       {% include index/time.html %}
     </div>
+  </div>
+
+  <!-- Row 4: Around-aligned -->
+  <div class="row justify-content-around mb-4">
     <div class="col-md-4">
       {% include index/objects.html %}
     </div>
-  </div>
-
-  <!-- Row 4: Full-Width Descriptions -->
-  <div class="row">
-    <div class="col-md-6">
+    <div class="col-md-4">
       {% include index/description.html %}
     </div>
-    <div class="col-md-6">
+  </div>
+
+  <!-- Row 5: Between-aligned -->
+  <div class="row justify-content-between">
+    <div class="col-md-4">
+      {% include index/description.html %}
+    </div>
+    <div class="col-md-4">
       {% include index/description.html %}
     </div>
   </div>
