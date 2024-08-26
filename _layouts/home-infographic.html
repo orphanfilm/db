@@ -2,52 +2,52 @@
 # Default home page with boxes providing collection stats
 layout: page
 ---
-<div class="row" data-masonry='{"percentPosition": true }'>
-  <div class="col-md-8 mb-4">
-    {% include index/carousel.html title="Sample Items" height=450 %}
+
+<div class="container">
+  <!-- Row 1: Carousel and Description -->
+  <div class="row mb-4">
+    <div class="col-md-8">
+      {% include index/carousel.html title="Sample Items" height=450 %}
+    </div>
+    <div class="col-md-4">
+      {% include index/description.html %}
+    </div>
   </div>
-  <div class="col-md-4 mb-4">
-    {% include index/description.html %}
+
+  <!-- Row 2: Descriptions and Time -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      {% include index/description.html %}
+    </div>
+    <div class="col-md-4">
+      {% include index/time.html %}
+    </div>
+    <div class="col-md-4">
+      {% include index/description.html %}
+      {% include index/time.html %}
+    </div>
   </div>
-  <div class="col-md-4 mb-4">
-    {% include index/description.html %}
-    {% include index/time.html %}
+
+  <!-- Row 3: Objects and Time -->
+  <div class="row mb-4">
+    <div class="col-md-4">
+      {% include index/objects.html %}
+    </div>
+    <div class="col-md-4">
+      {% include index/time.html %}
+    </div>
+    <div class="col-md-4">
+      {% include index/objects.html %}
+    </div>
   </div>
-  <div class="col-6 col-md-4 mb-4">
-    {% include index/time.html %}
-  </div>
-  <div class="col-6 col-md-4 mb-4">
-    {% include index/objects.html %}
-  </div>
-  <div class="col-6 col-md-4 mb-4">
-    {% include index/time.html %}
-  </div>
-  <div class="col-6 col-md-4 mb-4">
-    {% include index/objects.html %}
-  </div>
-  <div class="col-6 mb-4">
-    {% include index/description.html %}
-  </div>
-  <div class="col-6 mb-4">
-    {% include index/description.html %}
+
+  <!-- Row 4: Full-Width Descriptions -->
+  <div class="row">
+    <div class="col-md-6">
+      {% include index/description.html %}
+    </div>
+    <div class="col-md-6">
+      {% include index/description.html %}
+    </div>
   </div>
 </div>
-
-<!-- Add some CSS to handle the masonry layout -->
-<style>
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-  }
-
-  .row [class*='col-'] {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-bottom: 30px;
-  }
-</style>
-
-<!-- Add Masonry JS for better control over the layout -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
