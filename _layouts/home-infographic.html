@@ -5,14 +5,23 @@ layout: page
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
 <div class="row">
   
-  <div class="col-sm-6">
-    {% include index/time.html %}
+  <div class="col-md-6">
     {% include index/description.html %}
+    {% include index/time.html %}
+  </div>
+  
+  <div class="col-md-6">
+    {% include index/description.html %}
+    {% include index/time.html %}
+  </div>
+  
+  
+  <div class="col-md-6">
     {% include index/featured-terms.html field="presentation_title" title="Presentations" btn-color="outline-secondary" %}
     {% include index/objects.html %}
+  </div>
     
     
 
-  </div>
 
 </div>
