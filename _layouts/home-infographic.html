@@ -3,15 +3,17 @@
 layout: page
 ---
 {%- assign items = site.data[site.metadata] | where_exp: 'item','item.objectid' -%}
-<div class="row">   
-    
-    <div class="col-12">
-        {% include index/carousel.html title="Sample Items" %}
+<div class="row">
+    <div class="col-6">
+        {% include index/description.html %}
         {% include index/time.html %}
     </div>
-    
+    <div class="col-6">
+        {% include index/carousel.html title="Sample Items" %}
+    </div>
+</div>
+<div class="row">
     <div class="col-12">
         {% include index/featured-terms.html field="presentation_title" title="Presentations" btn-color="outline-secondary" %}
     </div>
-
-</div> 
+</div>
